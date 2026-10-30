@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Підбери подарунок</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="musicBtn" aria-label="Музика">🎵</button>
+<canvas id="bgConfetti"></canvas>
+<canvas id="cannon"></canvas>
+
+<main id="main">
+  <h1>🎁 Підбери подарунок</h1>
+  <p class="sub">Пройди тест і крутни колесо</p>
+
+  <section id="quiz" class="card">
+    <div class="progress"><div id="bar"></div></div>
+    <div class="counter" id="counter"></div>
+    <p class="q" id="qText"></p>
+    <div id="answers"></div>
+    <div class="nav"><button class="next" id="nextBtn" disabled>Далі</button></div>
+  </section>
+
+  <section id="wheelBox">
+    <div class="card">
+      <p class="q" style="margin-bottom:0">Тест пройдено! Крути колесо ✨</p>
+      <div class="wheelWrap">
+        <div class="pointer"></div>
+        <canvas id="wheel" width="860" height="860"></canvas>
+        <button id="spinBtn">Обернути колесо</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="overlay"><h2>Вітаю, подарунок підібрано!</h2></div>
+
+<script src="config.js"></script>
+<script src="shapes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
